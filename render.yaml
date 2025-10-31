@@ -1,7 +1,7 @@
 services:
   - type: web
     name: open-webui
-    runtime: docker
+    runtime: image
     image:
       url: ghcr.io/open-webui/open-webui:main
     disk:
