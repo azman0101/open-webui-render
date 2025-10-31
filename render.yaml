@@ -1,6 +1,7 @@
 services:
   - type: web
     name: open-webui
+    plan: free
     runtime: image
     image:
       url: ghcr.io/open-webui/open-webui:main
