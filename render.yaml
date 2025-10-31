@@ -4,9 +4,6 @@ services:
     runtime: docker
     image:
       url: ghcr.io/open-webui/open-webui:main
-    ports:
-      - port: 8080
-        protocol: TCP
     disk:
       name: open-webui-data
       mountPath: /app/backend/data
