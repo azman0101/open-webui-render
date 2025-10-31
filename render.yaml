@@ -9,3 +9,5 @@ services:
     envVars:
       - key: WEBUI_AUTH
         value: "False"
+      - key: PORT
+        value: 8080
