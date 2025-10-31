@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: open-webui
+    runtime: docker
+    image:
+      url: ghcr.io/open-webui/open-webui:main
+    ports:
+      - port: 8080
+        protocol: TCP
+    disk:
+      name: open-webui-data
+      mountPath: /app/backend/data
+      sizeGB: 1
+    envVars:
+      - key: WEBUI_AUTH
+        value: "False"
