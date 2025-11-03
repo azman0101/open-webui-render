@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: open-webui
+    plan: free
+    runtime: image
+    region: frankfurt
+    image:
+      url: ghcr.io/open-webui/open-webui:main
+    envVars:
+      - key: WEBUI_AUTH
+        value: "False"
+      - key: PORT
+        value: 8080
